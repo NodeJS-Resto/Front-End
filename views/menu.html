@@ -34,29 +34,134 @@
             </ul>
         </nav>
     </header> <!-- Fin Header-->
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/views/index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="/views/menu.html">MENU</a>
-                    </li> 
-                    <li>
-                        <a href="/views/contacto.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="/views/carrito.html">CARRITO DE COMPRAS</a>
-                    </li>
-                </ul>
-            </nav>
+
+    <main>
+    <section>
+      
+        <nav class="navbar container">
+            <ul class="navbar__menu">
+                <li class="navbar__ite">
+                    <a class="navbar__lin" href="#starters">Platos Salados</a></li>
+                <li class="navbar__item">
+                    <a class="navbar__lin" href="#main-courses">Postres</a></li>
+                <li class="navbar__ite">
+                    <a class="navbar__lin" href="#desserts">Sin Tacc</a></li>
+                <li class="navbar__ite">
+                    <a class="navbar__lin" href="#drinks">Bebidas</a></li>
+            </ul>
+        </nav>
+        
+    </section>
+
+    
+        <section id="starters">
+            <h2>Platos Salados</h2>
+            <div class="menu-item">
+                <h3>Ensalada César</h3>
+                <p>Lechuga romana, crutones, queso parmesano, y aderezo César</p>
+                <span class="price">$8.00</span>
+            </div>
+
+            <div class="menu-item">
+                <h3>Ravioles de Verdura</h3>
+                <p>Salsa Fileto</p>
+                <span class="price">$1500.00</span>
+            </div>
+           
         </section>
-        <p align="center">All rights reserved 2024 - FoodTrack &copy; <br>
-            <b>Tel:</b> 555 - 4444 | <a href="mailto:correo@hotmail.com">Correo Electronico</a>
-        </p>
-    </footer>
+        <section id="main-courses">
+            <h2>Postres</h2>
+            <div class="menu-item">
+                <h3>Tarta de Chocolate</h3>
+                <p>Rica tarta de chocolate con una bola de helado</p>
+                <span class="price">$1000.00</span>
+            </div>
+
+            <div class="menu-item">
+                <h3>Torta de vainilla</h3>
+                <p>Rica porcion de torta, relleno con crema y durazno</p>
+                <span class="price">$1000.00</span>
+            </div>
+           
+        </section>
+        <section id="desserts">
+            <h2>Sin Tacc</h2>
+            <div class="menu-item">
+                <h3>Tarta de verdurad</h3>
+                <p>Rica tarta de verdura, realiza con los mayores de los cuidados para evitar la contaminacion cruzada</p>
+                <span class="price">$6.00</span>
+            </div>
+
+            <div class="menu-item">
+                <h3>Fideos al pesto</h3>
+                <p>Fideos sin TACC</p>
+                <span class="price">$6.00</span>
+            </div>
+           
+        </section>
+        <section id="drinks">
+            <h2>Bebidas</h2>
+            <div class="menu-item">
+                <h3>Margarita</h3>
+                <p>Tequila, Cointreau, jugo de limón, y sal en el borde</p>
+                <span class="price">$7.00</span>
+            </div>
+          
+        </section>
+
+        
+    </main>
+  
+
+    <footer class="footerContainer">
+        <section>
+         <img class="logo-1" src="\img\logo1.png" alt=" ">
+         <div class="links">
+             <ul>
+                 <li>
+                     <a href="/views/index.html">INICIO</a>
+                 </li>
+                 <li>
+                     <a href="/views/menu.html">MENU</a>
+                 </li> 
+                 <li>
+                     <a href="/views/contacto.html">CONTACTO</a>
+                 </li>
+                 <li>
+                     <a href="/views/carrito.html">CARRITO DE COMPRAS</a>
+                 </li>
+             </ul>
+         </div>
+       
+         <div class="links">
+             <h4>Redes Sociales</h4>
+             <div class="socials">
+                 <a href="#">
+                     <div class="social">
+                         <img src="\img\s1.svg" alt="">
+                     </div>
+                 </a>
+                 <a href="#">
+                     <div class="social">
+                         <img src="\img\s2.svg" alt="">
+                     </div>
+                 </a>
+                 <a href="#">
+                     <div class="social">
+                         <img src="\img\s3.svg" alt="">
+                     </div>
+                 </a>
+             </div>
+         </div>
+ 
+        </section> 
+ 
+         <p align="center">All rights reserved 2024 - FoodTrack &copy; <br>
+             <b>Tel:</b> 555 - 4444 | <a href="mailto:correo@hotmail.com">Correo Electronico</a>
+         </p>
+     </footer>
+
+     <script src="/java/menu.js"></script>
 </body>
 
 </html>

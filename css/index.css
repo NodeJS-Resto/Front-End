@@ -55,11 +55,60 @@ a{
     color: inherit;
 }
 
-header,
-footer{
+header{
     font-family: var(--alternative-font-2);
     color: var(--text-second-color);
 }
+
+.footerContainer{
+    background-color: #333333;
+}
+.footer{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  
+  .link h4{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+  .links ul li a{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  .logo-1{
+    width: 0;
+  }
+
+  .socials{
+    display: flex;
+  }
+  
+  .social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #DB241B;
+    border-radius: 50%;
+  }
+  
+  .social:hover{
+    background-color: #DB241B;
+  }
+  
+  .social img{
+    margin: 8px 0 0 8px
+  }
+  
+
 main{
     background-color: var(--bg-primary-color);
 }
@@ -74,7 +123,7 @@ P{
 }
 
 img{
-    width: 100%;
+    width: 60%;
 }
 
 .container{
