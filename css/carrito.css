@@ -202,10 +202,10 @@ header{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    width: 80%; /* Cambia el ancho para que sea más grande que otros elementos */
-    max-width: 800px; /* Para limitar el tamaño máximo */
+    width: 80%; 
+    max-width: 800px; 
     height: 550px;
-    padding: 20px; /* Añade algo de padding */
+    padding: 20px; 
     background-color: var(--bg-second-color);
     color: var(--text-primary-color);
     border: 2px solid var(--text-second-color);
@@ -222,13 +222,13 @@ header{
 }
 
 .main__pedidos {
-    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    width: 100%;
     height: 500px; 
-    padding: 20px; /* Añade padding para el contenido interno */
-    margin-bottom: 20px; /* Espacio abajo */
-    border: 2px dashed var(--text-second-color); /* Borde para destacar el div */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: var(--bg-primary-color); /* Color de fondo */
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border: 2px dashed var(--text-second-color); 
+    border-radius: 10px; 
+    background-color: var(--bg-primary-color);
 }
 
 .main__link {
