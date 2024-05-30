@@ -1,4 +1,4 @@
-document.querySelectorAll('nav ul li a').forEach(anchor => {
+document.querySelectorAll('nav ul li a.navbar__lin').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 

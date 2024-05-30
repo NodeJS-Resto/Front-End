@@ -5,7 +5,7 @@
     --bg-second-color:#333333;
     --text-primary-color:white;
     --text-second-color:orange;
-    --text-third-color:orange;
+    --text-third-color:aqua;
 
     /* spacings */
     --spacing-5:0.5rem;
@@ -61,31 +61,18 @@ header{
 }
 
 .footerContainer{
-    background-color: #333333;
+    background-color: var(--bg-second-color);
 }
 .footer{
     padding: 100px 0px;
     display: flex;
     justify-content: space-between;
   }
-
-
   
   .link h4{
     color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 25px;
-  }
-  
-  .links ul li a{
-    color: #FFFFFF;
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: inline-block;
-  }
-
-  .logo-1{
-    width: 0;
   }
 
   .socials{
@@ -174,7 +161,7 @@ header{
     position: relative;
 }
 .navbar__link:hover{
-   background-color: var(--text-third-color); 
+   background-color: var(--text-second-color); 
    color: var(--text-primary-color);
    
 }
@@ -218,7 +205,7 @@ header{
 .hero__link{
     display: inline-block;
     font-size: var(--font-smallxl);
-    border: 2px solid var(--text-third-color);
+    border: 1px solid var(--text-second-color);
     background-color: var(--bg-second-color);
     color: var(--text-primary-color);
     padding: var(--spacing-8) var(--spacing-55);
@@ -230,7 +217,7 @@ header{
 
 .hero__link:hover{ 
     color: var(--bg-primary-color);
-    background-color:var(--text-third-color);     
+    background-color:var(--text-second-color);     
 }
 
 /*****COLLECTION*****/
@@ -262,7 +249,7 @@ header{
     font-family: var(--alternative-font);
     font-size: var(--font-smallxl);
     font-weight: 300;
-    border-bottom: 2px solid var(--text-third-color);
+    border-bottom: 1px solid var(--text-second-color);
     padding-bottom: var(--spacing-15);
 }
 
@@ -277,7 +264,7 @@ header{
 .collection__link{
     display: inline-block;
     font-size: var(--font-smallxl);
-    border: 2px solid var(--text-third-color);
+    border: 1px solid var(--text-second-color);
     background-color: var(--bg-second-color);
     color: var(--text-primary-color);
     padding: var(--spacing-8) var(--spacing-36);
@@ -288,5 +275,64 @@ header{
 }
 .collection__link:hover{ 
     color: var(--bg-primary-color);
-    background-color:var(--text-third-color);     
+    background-color:var(--text-second-color);     
+}
+
+/****Footer****/
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerContainer section {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-25);
+}
+
+.footerContainer section .links {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-small-lx);
+}
+
+.footerContainer section .links ul {
+    display: flex;
+}
+
+.footerContainer section .links ul li {
+    margin: 0 30px;
+}
+
+.footerContainer section .links ul li a {
+    color: var(--text-second-color);
+    text-decoration: none;
+    padding: var(--spacing-10) var(--spacing-15)
+}
+
+.footerContainer section .links ul li a:hover {
+    background-color: var(--text-second-color);
+    color: var(--text-primary-color); 
+    transition: all .3s ease-in-out;
+}
+.footerContainer div{
+
+    font-size: var(--font-small-lx);
+}
+.instagram-link:hover{
+    color: red;
+}
+.twitter-link:hover{
+    color: red;
+}
+.facebook-link:hover{
+    color: red;
+}
+
+.footerContainer p {
+    text-align: center; 
+    color: var(--text-second-color); 
+    font-size: var(--font-small-lx);
 }

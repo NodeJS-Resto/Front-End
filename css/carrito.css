@@ -43,8 +43,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    
+html{ 
     font-family: var(--base-font);
     font-size: 73.5%;
     color: var(--text-second-color);
@@ -109,6 +108,7 @@ header{
   }
 main{
     background-color: var(--bg-primary-color);
+    min-height: 100vh;
 }
 
 
@@ -181,4 +181,64 @@ header{
     display: flex;
     align-items: center;
     gap: var(--spacing-5);
+}
+
+
+/****Footer****/
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerContainer section {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-25);
+}
+
+.footerContainer section .links {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-small-lx);
+}
+
+.footerContainer section .links ul {
+    display: flex;
+}
+
+.footerContainer section .links ul li {
+    margin: 0 30px;
+}
+
+.footerContainer section .links ul li a {
+    color: var(--text-second-color);
+    text-decoration: none;
+    padding: var(--spacing-10) var(--spacing-15)
+}
+
+.footerContainer section .links ul li a:hover {
+    background-color: var(--text-second-color);
+    color: var(--text-primary-color); 
+    transition: all .3s ease-in-out;
+}
+.footerContainer div{
+
+    font-size: var(--font-small-lx);
+}
+.instagram-link:hover{
+    color: red;
+}
+.twitter-link:hover{
+    color: red;
+}
+.facebook-link:hover{
+    color: red;
+}
+
+.footerContainer p {
+    text-align: center; 
+    color: var(--text-second-color); 
+    font-size: var(--font-small-lx);
 }
