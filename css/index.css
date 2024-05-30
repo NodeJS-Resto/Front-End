@@ -175,12 +175,12 @@ header{
    
 }
 
-.with-icon{
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-5);
+.navbar__cart img{
+    transform: rotate(350deg);
 }
-
+.navbar__cart img:hover{
+    transform: rotate(0deg);
+}
 
 /***** HERO *****/
 
