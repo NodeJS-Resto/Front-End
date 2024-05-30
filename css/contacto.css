@@ -1,131 +1,135 @@
-
-:root{
+:root {
     /* colours */
-    --bg-primary-color:#010409;
-    --bg-second-color:#333333;
-    --text-primary-color:white;
-    --text-second-color:orange;
-    --text-third-color:orange;
+    --bg-primary-color: #010409;
+    --bg-second-color: #333333;
+    --text-primary-color: white;
+    --text-second-color: orange;
+    --text-third-color: orange;
 
     /* spacings */
-    --spacing-5:0.5rem;
-    --spacing-8:0.8rem;
-    --spacing-10:1rem;
-    --spacing-15:1.5rem;
-    --spacing-20:2rem;
-    --spacing-25:2.5rem;
-    --spacing-36:3.6rem;
-    --spacing-55:5.5rem;
-    --spacing-70:7rem;
-    --spacing-100:10rem;
-    --spacing-130:13rem;
+    --spacing-5: 0.5rem;
+    --spacing-8: 0.8rem;
+    --spacing-10: 1rem;
+    --spacing-15: 1.5rem;
+    --spacing-20: 2rem;
+    --spacing-25: 2.5rem;
+    --spacing-36: 3.6rem;
+    --spacing-55: 5.5rem;
+    --spacing-70: 7rem;
+    --spacing-100: 10rem;
+    --spacing-130: 13rem;
 
     /* tipography */
     --base-font: 'Inter', sans-serif;
     --alternative-font: 'Raleway', sans-serif;
-    --alternative-font-2:"Inter Variable",ui-sans-serif;
+    --alternative-font-2: "Inter Variable", ui-sans-serif;
 
     /* Font Sizes */
-    --font-display:4.5em;
-    --font-small-s:0.9em;
-    --font-small-l:1.2em;
-    --font-small-lx:1.4em;
-    --font-small:1.5em;
-    --font-smallxl:1.6em;
-    --font-medium:1.8em;
-    --font-large:2.4em;
+    --font-display: 4.5em;
+    --font-small-s: 0.9em;
+    --font-small-l: 1.2em;
+    --font-small-lx: 1.4em;
+    --font-small: 1.5em;
+    --font-smallxl: 1.6em;
+    --font-medium: 1.8em;
+    --font-large: 2.4em;
 }
 
 *,
 *:before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    
+
+html {
+
     font-family: var(--base-font);
     font-size: 73.5%;
     color: var(--text-second-color);
 }
-a{
+
+a {
     text-decoration: none;
     font-family: inherit;
     color: inherit;
 }
 
-header{
+header {
     font-family: var(--alternative-font-2);
     color: var(--text-second-color);
 }
 
-.footerContainer{
+.footerContainer {
     background-color: #333333;
 }
-.footer{
+
+.footer {
     padding: 100px 0px;
     display: flex;
     justify-content: space-between;
-  }
+}
 
 
-  
-  .link h4{
+
+.link h4 {
     color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 25px;
-  }
-  
-  .links ul li a{
+}
+
+.links ul li a {
     color: #FFFFFF;
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
-  }
+}
 
-  .logo-1{
+.logo-1 {
     width: 0;
-  }
+}
 
-  .socials{
+.socials {
     display: flex;
-  }
-  
-  .social{
+}
+
+.social {
     margin: 0 10px;
     height: 40px;
     width: 40px;
     border: 1px solid #DB241B;
     border-radius: 50%;
-  }
-  
-  .social:hover{
+}
+
+.social:hover {
     background-color: #DB241B;
-  }
-  
-  .social img{
+}
+
+.social img {
     margin: 8px 0 0 8px
-  }
-main{
+}
+
+main {
     background-color: var(--bg-primary-color);
     padding: var(--spacing-15);
 }
 
 
-ul, ol{
+ul,
+ol {
     list-style-type: none;
 }
 
-P{
+P {
     font-size: 1.8em;
 }
 
-img{
+img {
     width: 60%;
 }
 
-.container{
+.container {
     max-width: 1250px;
     margin: 0 auto;
 }
@@ -143,6 +147,7 @@ header{
     align-items: center;
 
 }
+
 .navbar__menu{
     display: flex;
     align-items: center;
@@ -156,6 +161,14 @@ header{
     color: var(--text-second-color);
     max-width: 230px;
     font-size: var(--font-small);
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-checkbox {
+    display: none;
 }
 
 .navbar__logo img{
@@ -173,7 +186,7 @@ header{
     position: relative;
 }
 .navbar__link:hover{
-   background-color: var(--text-third-color); 
+   background-color: var(--text-second-color); 
    color: var(--text-primary-color);
    
 }
@@ -186,52 +199,6 @@ header{
 
 
 /***************Formulario*************/
-/*
-.formContacto {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 100px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    background-color: #0d0d0d;
-}
-
-form {
-    background: rgb(59, 58, 58);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-}
-
-input, textarea, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-.error {
-    color: red;
-    font-size: 0.9em;
-}*/
 
 .formContacto {
     max-width: 600px;
@@ -249,6 +216,7 @@ button:hover {
 
 #contactForm label,
 #contactForm input,
+#contactForm select,
 #contactForm textarea,
 #contactForm .error,
 #contactForm p,
@@ -264,9 +232,15 @@ button:hover {
 #contactForm label {
     flex: 1;
     margin-right: 10px;
- text-align: left;
+    text-align: left;
 }
 
+.custom-select:focus {
+    border-color: orange;
+    box-shadow: 0 0 5px rgba(186, 168, 3, 0.6);
+}
+
+#contactForm select,
 #contactForm input,
 #contactForm textarea {
     flex: 2;
@@ -332,25 +306,75 @@ button:hover {
 
 .footerContainer section .links ul li a:hover {
     background-color: var(--text-second-color);
-    color: var(--text-primary-color); 
+    color: var(--text-primary-color);
     transition: all .3s ease-in-out;
 }
-.footerContainer div{
+
+.footerContainer div {
 
     font-size: var(--font-small-lx);
 }
-.instagram-link:hover{
+
+.instagram-link:hover {
     color: red;
 }
-.twitter-link:hover{
+
+.twitter-link:hover {
     color: red;
 }
-.facebook-link:hover{
+
+.facebook-link:hover {
     color: red;
 }
 
 .footerContainer p {
-    text-align: center; 
-    color: var(--text-second-color); 
+    text-align: center;
+    color: var(--text-second-color);
     font-size: var(--font-small-lx);
+}
+
+@media (max-width: 991px) {
+
+    
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        justify-content: flex-start;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: white; 
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-checkbox:checked ~ .navbar__menu {
+        display: flex;
+    }
+
+    .menu-checkbox {
+        display: none;
+    }
 }

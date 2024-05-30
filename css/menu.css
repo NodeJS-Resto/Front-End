@@ -126,6 +126,7 @@ header{
     align-items: center;
 
 }
+
 .navbar__menu{
     display: flex;
     align-items: center;
@@ -139,6 +140,14 @@ header{
     color: var(--text-second-color);
     max-width: 230px;
     font-size: var(--font-small);
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-checkbox {
+    display: none;
 }
 
 .navbar__logo img{
@@ -166,7 +175,6 @@ header{
     align-items: center;
     gap: var(--spacing-5);
 }
-
 /*******  Menu   ******/
 
 
@@ -265,4 +273,50 @@ section {
     text-align: center; 
     color: var(--text-second-color); 
     font-size: var(--font-small-lx);
+}
+
+@media (max-width: 991px) {
+
+    
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        justify-content: flex-start;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: white; 
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-checkbox:checked ~ .navbar__menu {
+        display: flex;
+    }
+
+    .menu-checkbox {
+        display: none;
+    }
 }

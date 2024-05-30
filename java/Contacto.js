@@ -4,6 +4,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     let isValid = true;
     
     const name = document.getElementById('name').value.trim();
+    const ape = document.getElementById('ape').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
     
@@ -12,6 +13,13 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         isValid = false;
     } else {
         document.getElementById('nameError').textContent = '';
+    }
+
+    if (ape === '') {
+        document.getElementById('apeError').textContent = 'El apellido es obligatorio.';
+        isValid = false;
+    } else {
+        document.getElementById('apeError').textContent = '';
     }
     
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
